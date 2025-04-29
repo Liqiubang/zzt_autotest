@@ -3,7 +3,6 @@ import pytest
 from webdriver_helper import get_webdriver
 import logging
 logger = logging.getLogger(__name__)
-from selenium.webdriver.support.wait import WebDriverWait
 
 @pytest.fixture(autouse=False, scope="session")
 def fixture_browser():

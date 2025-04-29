@@ -1,6 +1,5 @@
 from testcases.test_basepage import TestLoginSuccessPage
 import logging
-
 logger = logging.getLogger(__name__)
 
 """pytest 会通过 ‌参数名匹配‌ 自动查找conftest.py 并注入已注册的夹具（fixture_browser）

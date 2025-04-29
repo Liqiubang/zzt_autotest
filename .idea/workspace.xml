@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt登录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
@@ -118,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745894582711</updated>
-      <workItem from="1745894607492" duration="11263000" />
+      <workItem from="1745894607492" duration="11982000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />

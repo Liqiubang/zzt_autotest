@@ -11,3 +11,4 @@ def fixture_browser():
     logger.info("夹具初始化完成，浏览器启动成功")
     yield driver
     driver.quit()
+    print("zzz")

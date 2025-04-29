@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/zzt_autotest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/039a3d89-f40d-46a2-b787-3a543828a66c-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/05780a6e-55b9-4d4a-ac48-585469a71832-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/0eabf20e-f973-49fd-9f12-158b8b4450a5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/0f0c3b86-76b1-4d42-bb62-67bf5361b4a7-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/12f465ca-f712-4c68-b0cc-7a1e5d7f6642-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/1564d255-d102-4fd2-ae62-955c1c02e47b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/1be03ac3-db67-40cc-8e3c-f3f3ec9049a9-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/1c85f5c1-dba8-4571-9c4d-13286511a48a-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/1d27bb21-ac52-40cf-b790-8b506c093ab2-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/35e8c3a0-dcdb-4f26-99fd-1c1392b3c1af-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/36bf1348-6469-4394-8e08-16647e11af62-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/39b514e4-c98b-43c9-97b0-71cb387ed5e7-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/3b53ed97-3ac7-45c6-8435-d7761076cb7f-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/3c9a0534-9c78-422a-8147-76d25cd1bf32-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/3fd80cc9-3f13-4e5d-9b2d-839697b38e64-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/4188ca3e-0f1b-430b-9abb-ebaf80445d63-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/430fa2af-6688-4b7b-a0d7-15dfa433d4a5-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/458c3db5-c49d-4f31-91f4-113c3ef40056-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/4735ebb5-6406-414b-9e93-62eef639fd56-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/47fdc7d8-25b8-4c78-afcd-414d2435e7d7-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/50274194-ea88-4084-ad96-76dc59a0aa63-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/507eb9b8-b56c-49b9-a744-5a61a3ddecfb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/5464ab12-e484-4822-b14f-75419487f7b5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/5899c035-26a4-4adf-8e29-0a968bd6f40d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/6187f803-4983-4fc5-842d-3293ed01f126-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/6dff214d-0979-4d7f-9560-54978683d467-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/6fed37ae-6485-4eb5-bd05-d4ef8fa9878f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/776055cc-4b8a-4982-a0d6-2f27a69aa2e9-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/77bb8337-167a-4d10-b707-61b9140bffb8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/78562556-5439-4193-93a2-f3c85acb91f0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/786f429d-6723-467d-b7dd-426716da07c2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/7af349df-7265-4cf6-96fb-b03f14203df5-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/7edd2496-af8b-4299-bd0e-1116a4335296-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/7f14fda3-ba2b-490e-aab0-30dbe2495df2-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/80f92ea0-4cf9-46ae-b70a-2d504e4fc7ef-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8166ca79-3820-4349-9f46-a7c9b2561fab-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/81756936-b280-435f-90b3-81d58494d751-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8463248c-263e-46fa-8d27-74aa741b12cd-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8496cbcc-17db-415f-8232-614e0a8907bd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8bf089d7-1668-445b-afa7-48bdc02db767-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8c9021d6-84d3-4dcf-ab8b-20dffbbbbf20-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8f6c25bc-fb58-49c6-87cf-890aae7293bb-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/8f7c3d37-cfcc-4ab4-a232-9a9cb99ea84b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/91d1109a-3398-4f67-9d6e-74e336e5479d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/9499de2c-b7b5-466e-800f-f1d50c5a7f06-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/950d5a2b-2d3a-4aec-8c65-17a0af9d51c5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/9d70d1d3-1450-419c-aad7-2b6641202468-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/a0054826-bfa5-410d-9065-ba8fbcd91af6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/a819bc8c-47dd-4e16-8de5-91dd3ebcdd9b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/ab4d66ad-2b9e-432a-8736-89fc5ff3cabd-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/af7a3308-ef7d-4fe5-8c10-e1364be492d9-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/afb0b5fc-7661-4d69-bec1-ab282834cd48-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/b2ef27f8-58df-44d4-82c8-6538d3a2f189-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/b7ff7a37-9e8e-494c-99f8-819b0b8908f6-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/bd9a7a6e-7f64-4c2d-a729-dc95db575910-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/c119244e-5ce6-4a15-9683-2b1944e9a5d8-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/c175675d-9f7d-44e3-90e3-2350a635c39b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/c4cfae72-925e-4b14-9ee3-a963d89bad77-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/cde8fecc-76ff-4d90-988b-200aa53dc8d1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/cf34a8c2-f428-4de8-a4d6-16e7de90d197-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/d1609ddb-910a-45f1-97a6-5e3bf91a0c1b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/d855f649-689c-4585-9a01-636d5b747b7e-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/df28c9e1-7a6b-4407-a661-e954e329744e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/e60abc77-e27e-472f-a7c4-356e4083edf6-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/e87abedc-a085-49fc-a38a-695fd40dbd95-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/ef974ba5-7a67-41bf-bcfc-535547b47f21-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/f16fa189-dd20-4ac7-b093-83e1c9aaee1b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/allure-results/f7296f24-161a-40ba-b6db-ec9f0a8d1236-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_case.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2wNuvSRVD8uss2uozy2fzkozGIT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests in test_case.py.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest" />
+      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\testcases" />
+      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\TestCases" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests in test_case.py">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="zzt_autotest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\15274\PycharmProjects\zzt_autotest\TestCases\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_case.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="zzt_autotest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_case.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="" />
+      <created>1745894582711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745894582711</updated>
+      <workItem from="1745894607492" duration="8668000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1745908426890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+  </component>
+</project>

@@ -3,7 +3,6 @@ import pytest
 from webdriver_helper import get_webdriver
 import logging
 logger = logging.getLogger(__name__)
-
 @pytest.fixture(autouse=False, scope="session")
 def fixture_browser():
     """全局浏览器管理fixture"""

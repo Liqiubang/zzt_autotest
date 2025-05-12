@@ -5,6 +5,7 @@ import urllib  # 网络访问
 import cv2  # opencv库
 import logging
 import allure
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.expected_conditions import alert_is_present
 from selenium.webdriver.support import expected_conditions as EC
@@ -46,7 +47,7 @@ class TestBasePage:
 
 """Page类作为基类被其他页面类继承，子类在初始化时会调用父类的构造函数，传递driver参数"""
 
-
+# @pytest.fixture(scope="session")
 class TestLoginSuccessPage(TestBasePage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
@@ -60,12 +61,10 @@ class TestLoginSuccessPage(TestBasePage):
         self.get_element(self.password).send_keys(password)
         self.get_element(self.login_btn).click()
         time.sleep(2)
-        logger.info("登录成功")
-        allure.attach(self.driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)  # 交互后截图
 
+        # 解决登录时的滑块验证问题
         bigImage = self.driver.find_element(By.XPATH,
                                             "//div[@class='tencent-captcha-dy__verify-bg-img tencent-captcha-dy__unselectable']")
-
         s = bigImage.get_attribute("style")  # 获取图片的style属性
         # 设置能匹配出图片路径的正则表达式
         p = 'background-image: url\(\"(.*?)\"\);'
@@ -84,7 +83,6 @@ class TestLoginSuccessPage(TestBasePage):
         )
         # 小滑块到目标区域的移动距离（新缺口的水平坐标-小滑块的水平坐标）
         # 新缺口坐标=原缺口坐标*新画布宽度/原画布宽度
-        # newDis = int(dis * 330 / 672 - smallImage.location['x'])
         newDis = int(dis * 330 / 672 - 30)
         # 添加调试输出验证计算值
         print(f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:30 | 计算移动距离:{newDis}")
@@ -103,6 +101,9 @@ class TestLoginSuccessPage(TestBasePage):
             i += 1
         # 移动完之后，松开鼠标
         ActionChains(self.driver).release().perform()
+        time.sleep(5)
+        logger.info("登录成功")
+        allure.attach(self.driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)  # 交互后截图
 
         # ActionChains(self.driver).click_and_hold(smallImage).perform()
         #
@@ -140,8 +141,7 @@ class TestLoginSuccessPage(TestBasePage):
         #
         # ActionChains(self.driver).release().perform()
 
-        # 整体等待5秒看结果
-        time.sleep(5)
+
 
     def get_pos(self,imageSrc):
         # 读取图像文件并返回一个image数组表示的图像对象
@@ -176,3 +176,6 @@ class TestLoginSuccessPage(TestBasePage):
                 cv2.imwrite("old_square.jpg", image)
                 return x
         return 0
+
+class TestSendPage:
+    pass

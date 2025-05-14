@@ -5,20 +5,20 @@ import urllib  # 网络访问
 import cv2  # opencv库
 import logging
 import allure
+import document
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.expected_conditions import alert_is_present
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains  # 动作类
-
 logger = logging.getLogger(__name__)
 
 
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.wait = WebDriverWait(driver, 30)
 
     def get_element(self, xpath):
         logger.info(f"正在定位元素：{xpath=}")
@@ -47,7 +47,7 @@ class TestBasePage:
 
 """Page类作为基类被其他页面类继承，子类在初始化时会调用父类的构造函数，传递driver参数"""
 
-# @pytest.fixture(scope="session")
+
 class TestLoginSuccessPage(TestBasePage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
@@ -60,7 +60,7 @@ class TestLoginSuccessPage(TestBasePage):
         self.get_element(self.username).send_keys(username)
         self.get_element(self.password).send_keys(password)
         self.get_element(self.login_btn).click()
-        time.sleep(2)
+        time.sleep(3)
 
         # 解决登录时的滑块验证问题
         bigImage = self.driver.find_element(By.XPATH,
@@ -72,9 +72,9 @@ class TestLoginSuccessPage(TestBasePage):
         bigImageSrc = re.findall(p, s, re.S)[0]  # re.S表示点号匹配任意字符，包括换行符
         print("滑块验证图片下载路径:", bigImageSrc)
         # 下载图片至本地
-        urllib.request.urlretrieve(bigImageSrc, 'old.png')
+        urllib.request.urlretrieve(bigImageSrc, './testcases/old.png')
         # 计算缺口图像的x轴位置
-        dis = self.get_pos('old.png')
+        dis = self.get_pos('./testcases/old.png')
         # 获取小滑块元素，并移动它到上面的位置
         # smallImage = self.driver.find_element(By.XPATH,
         #                                       "//*[@id='tCaptchaDyMainWrap']/div[2]/div[2]/div[2]/div/div")
@@ -83,11 +83,12 @@ class TestLoginSuccessPage(TestBasePage):
         )
         # 小滑块到目标区域的移动距离（新缺口的水平坐标-小滑块的水平坐标）
         # 新缺口坐标=原缺口坐标*新画布宽度/原画布宽度
-        newDis = int(dis * 330 / 672 - 30)
+        newDis = int(dis * 330 / 672 - 35)
         # 添加调试输出验证计算值
-        print(f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:30 | 计算移动距离:{newDis}")
+        print(
+            f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:30 | 计算移动距离:{newDis}")
+        time.sleep(1)
 
-        self.driver.implicitly_wait(3)  # 使用浏览器隐式等待
         # 按下小滑块按钮不动
         ActionChains(self.driver).click_and_hold(smallImage).perform()
         # 移动小滑块，模拟人的操作，一次次移动一点点
@@ -106,12 +107,10 @@ class TestLoginSuccessPage(TestBasePage):
         allure.attach(self.driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)  # 交互后截图
 
         # ActionChains(self.driver).click_and_hold(smallImage).perform()
-        #
         # # 轨迹参数
         # total_move = newDis
         # moved = 0
         # base_speed = [3, 5, 8, 12]  # 不同阶段的基础速度
-        #
         # while moved < total_move:
         #     # 分阶段调整速度
         #     if moved < total_move * 0.3:
@@ -140,10 +139,11 @@ class TestLoginSuccessPage(TestBasePage):
         #     ).perform()
         #
         # ActionChains(self.driver).release().perform()
+        # time.sleep(5)
+        # logger.info("登录成功")
+        # allure.attach(self.driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)  # 交互后截图
 
-
-
-    def get_pos(self,imageSrc):
+    def get_pos(self, imageSrc):
         # 读取图像文件并返回一个image数组表示的图像对象
         image = cv2.imread(imageSrc)
         # GaussianBlur方法进行图像模糊化/降噪操作。
@@ -170,12 +170,48 @@ class TestLoginSuccessPage(TestBasePage):
                 # x, y: 边界矩形左上角点的坐标。
                 # w, h: 边界矩形的宽度和高度。
                 x, y, w, h = cv2.boundingRect(contour)
-                print("计算出目标区域的坐标及宽高：", x, y, w, h)
+                print("计算出老画布缺口位置的坐标及宽高：", x, y, w, h)
                 # 在目标区域上画一个红框看看效果
                 cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2)
-                cv2.imwrite("old_square.jpg", image)
+                cv2.imwrite("./testcases/old_square.jpg", image)
                 return x
         return 0
 
-class TestSendPage:
-    pass
+
+class TestSendSmsPage(TestBasePage):
+    def __init__(self, driver):
+        super().__init__(driver)  # 调用基类构造函数
+        self.marketingSms = "//*[@id='clApp']/div/div[3]/div/div/div/div[1]/div/div[3]/div/div[2]/div/div/div//div[text()='会员营销短信']"
+        self.smsSend = "//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[1]"
+        self.smsBatchSendBtn = "//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/button/span"
+        self.manualAdd = "//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
+        self.inputMobile = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/span/input"
+        self.confirmBtn = "/html/body/div[4]/div/div[2]/div/div[2]/div[3]/button[2]/span"
+        self.selectConstantTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
+        # self.select = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
+        self.select = "/html/body/div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
+        self.submitSmsBatchTask = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
+        self.result = "/html/body/div[6]/div/div[2]/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/h3"
+    def sendSms(self):
+        logger.info("准备发送常量短信")
+        self.get_element(self.marketingSms).click()
+        self.get_element(self.smsSend).click()
+        self.get_element(self.smsBatchSendBtn).click()
+        self.get_element(self.manualAdd).click()
+        self.get_element(self.inputMobile).send_keys("15274438093")
+        self.get_element(self.confirmBtn).click()
+        print("点击确认")
+
+        time.sleep(3)
+        self.get_element(self.selectConstantTemplate).click()
+        print("点击选择模板")
+
+        time.sleep(3)
+        self.get_element(self.select).click()
+        # option = self.driver.find_element(By.XPATH, self.select)
+        # self.driver.execute_script("arguments[0].click();", option)
+        print("点击选择")
+
+        self.get_element(self.submitSmsBatchTask).click()
+        logger.info("发送常量短信完成")
+        allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图

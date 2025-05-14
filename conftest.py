@@ -17,4 +17,7 @@ def fixture_browser():
     driver.maximize_window()
     logger.info("夹具初始化完成，浏览器启动成功")
     yield driver
+    #每次测试后清除 cookies 和本地存储，避免残留数据触发异常检测
+    driver.delete_all_cookies()
+    driver.execute_script("window.localStorage.clear();")
     driver.quit()

@@ -18,15 +18,15 @@ logger = logging.getLogger(__name__)
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 30)
+        self.wait = WebDriverWait(driver, 15)
 
     def get_element(self, xpath):
         logger.info(f"正在定位元素：{xpath=}")
         allure.attach(self.driver.get_screenshot_as_png(), name="定位元素截图",
                       attachment_type=allure.attachment_type.PNG)  # 定位前截图
         el = self.wait.until(
-            # EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象 自动等待元素出现 参数是元组，所以要多加一组小括号
-            EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
+            EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象 自动等待元素出现 参数是元组，所以要多加一组小括号
+            # EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
         logger.info(f"元素定位成功：tag_name{el.tag_name}")
         return el
 
@@ -179,7 +179,7 @@ class TestLoginSuccessPage(TestBasePage):
         return 0
 
 
-class TestSendSmsPage(TestBasePage):
+class TestSendConstantSmsPage(TestBasePage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
         self.marketingSms = "//*[@id='clApp']/div/div[3]/div/div/div/div[1]/div/div[3]/div/div[2]/div/div/div//div[text()='会员营销短信']"
@@ -191,7 +191,9 @@ class TestSendSmsPage(TestBasePage):
         self.selectConstantTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
         self.select = "//div[@class='sms-table-body']//a"
         self.submitSmsBatchTask = "//*[@id='onlinesendForm']/div[8]/div/div/div/div/div[2]/button/span"
-        self.result = "//div[@class='sms-modal-body']//h3"
+        self.sendNow = "//div[@class='sms-modal-body']//span[text()='立即发送']"
+        self.result = "//div[@class='ant-modal-body']//div[@class='ant-modal-confirm-content']"
+
     def sendSms(self):
         logger.info("准备发送常量短信")
         self.get_element(self.marketingSms).click()
@@ -200,10 +202,11 @@ class TestSendSmsPage(TestBasePage):
         self.get_element(self.manualAdd).click()
         self.get_element(self.inputMobile).send_keys("15274438093")
         self.get_element(self.confirmBtn).click()
+        time.sleep(3) #等待号码输入框关闭
         self.get_element(self.selectConstantTemplate).click()
-        time.sleep(3) #等待新框出现
         self.get_element(self.select).click()
-        time.sleep(3) #等待新框出现
+        time.sleep(3)  # 等待选择模板框关闭
         self.get_element(self.submitSmsBatchTask).click()
+        self.get_element(self.sendNow).click()
         logger.info("发送常量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图

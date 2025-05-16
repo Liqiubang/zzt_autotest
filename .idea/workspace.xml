@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt发送短信">
-      <change afterPath="$PROJECT_DIR$/allure-results/43365e40-cec6-4d53-a754-1ddc228c54fc-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/53c5fdf4-8d9b-4b57-9d2a-2b1820a60aab-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5c0bbdee-f498-4656-9fd2-1ac446588ae5-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/629f7e3e-bf7f-43e0-9c66-da955cd1b4ff-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/69245dba-e301-4b80-b470-55768469d508-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7d899631-1a46-4ba5-9972-ce3ee985062f-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7e03b3e3-ecab-42fa-bc3b-4535d4921dfb-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/84b45035-ebc5-4325-91ab-d574407ddeb7-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b19eebc5-38cb-40ab-94b9-d8d11224b953-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b2764f5f-88a0-4715-8032-6593d8e7dccb-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c409e383-26cc-430b-97f6-3f8dab5bb679-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cd60f681-7b2c-48c9-ad7f-69e250b463c7-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/daacf986-98e8-40a5-a94c-18847fdc84c5-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f29c0840-f07b-4286-ac92-0b54be0fd0c1-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f8087920-27a3-4009-b64d-1d3c4e58e771-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/fab3ec3b-0bd4-47ec-9e31-b33c28db33c8-attachment.png" afterDir="false" />
+    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt发送短信完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old.png" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old_square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old_square.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
@@ -143,7 +128,7 @@
       <workItem from="1747033304360" duration="13774000" />
       <workItem from="1747101687410" duration="9199000" />
       <workItem from="1747119097384" duration="15219000" />
-      <workItem from="1747359753934" duration="4169000" />
+      <workItem from="1747359753934" duration="8831000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />
@@ -209,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747188279313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="zzt发送短信完成">
+      <option name="closed" value="true" />
+      <created>1747364559099</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747364559099</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +213,8 @@
     <MESSAGE value="zzt登录" />
     <MESSAGE value="zzt滑块登录" />
     <MESSAGE value="zzt发送短信" />
-    <option name="LAST_COMMIT_MESSAGE" value="zzt发送短信" />
+    <MESSAGE value="zzt发送短信完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="zzt发送短信完成" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1747128293584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />

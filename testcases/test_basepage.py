@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, 30)
 
     def get_element(self, xpath):
         logger.info(f"正在定位元素：{xpath=}")

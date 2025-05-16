@@ -5,6 +5,8 @@ import pytest
 from testcases.test_basepage import *
 import logging
 
+from utils.database_ck import query_from_ck
+
 logger = logging.getLogger(__name__)
 
 """pytest 会通过 ‌参数名匹配‌ 自动查找conftest.py 并注入已注册的夹具（fixture_browser）
@@ -28,7 +30,11 @@ def test_login_success(fixture_browser):
 def test_send_sms(test_login_success):
     page = TestSendConstantSmsPage(test_login_success)
     page.sendSms()
-    assert page.get_element(page.result).text == "已经成功提交发送"
+    ckResult = query_from_ck()
+    content = str(ckResult[0][36])
+    report = str(ckResult[0][40])
+    assert page.get_element(page.result).text == "已经成功提交发送" and content.__eq__(
+        "【创蓝云智】测试 www.baidu.com 测试拒收请回复R") and report.__eq__("DELIVRD")
 
 
 if __name__ == '__main__':

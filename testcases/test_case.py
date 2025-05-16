@@ -23,20 +23,26 @@ def test_login_success(fixture_browser):
     logger.info("登录成功")
     yield fixture_browser
     fixture_browser.refresh()
+    time.sleep(60)
 
 
 @pytest.mark.smoke
 # @pytest.mark.parametrize("phone", [15274438093, 15274438094])
-def test_send_sms(test_login_success):
+def test_send_constant_sms(test_login_success):
     page = TestSendConstantSmsPage(test_login_success)
-    page.sendSms()
+    page.sendConstantSms()
     ckResult = query_from_ck()
     content = str(ckResult[0][36])
     report = str(ckResult[0][40])
     assert page.get_element(page.result).text == "已经成功提交发送" and content.__eq__(
         "【创蓝云智】测试 www.baidu.com 测试拒收请回复R") and report.__eq__("DELIVRD")
 
+@pytest.mark.smoke
+# @pytest.mark.parametrize("phone", [15274438093, 15274438094])
+def test_send_variable_sms(test_login_success):
+    page = TestSendVariableSmsPage(test_login_success)
+    page.sendVariableSms()
 
 
 if __name__ == '__main__':
-    test_send_sms()
+    test_send_constant_sms()

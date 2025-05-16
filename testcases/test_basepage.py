@@ -25,7 +25,8 @@ class TestBasePage:
         allure.attach(self.driver.get_screenshot_as_png(), name="定位元素截图",
                       attachment_type=allure.attachment_type.PNG)  # 定位前截图
         el = self.wait.until(
-            EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象 自动等待元素出现 参数是元组，所以要多加一组小括号
+            # EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象 自动等待元素出现 参数是元组，所以要多加一组小括号
+            EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
         logger.info(f"元素定位成功：tag_name{el.tag_name}")
         return el
 
@@ -188,10 +189,9 @@ class TestSendSmsPage(TestBasePage):
         self.inputMobile = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/span/input"
         self.confirmBtn = "/html/body/div[4]/div/div[2]/div/div[2]/div[3]/button[2]/span"
         self.selectConstantTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
-        # self.select = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
-        self.select = "/html/body/div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
-        self.submitSmsBatchTask = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[5]/div/a"
-        self.result = "/html/body/div[6]/div/div[2]/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/h3"
+        self.select = "//div[@class='sms-table-body']//a"
+        self.submitSmsBatchTask = "//*[@id='onlinesendForm']/div[8]/div/div/div/div/div[2]/button/span"
+        self.result = "//div[@class='sms-modal-body']//h3"
     def sendSms(self):
         logger.info("准备发送常量短信")
         self.get_element(self.marketingSms).click()
@@ -200,18 +200,10 @@ class TestSendSmsPage(TestBasePage):
         self.get_element(self.manualAdd).click()
         self.get_element(self.inputMobile).send_keys("15274438093")
         self.get_element(self.confirmBtn).click()
-        print("点击确认")
-
-        time.sleep(3)
         self.get_element(self.selectConstantTemplate).click()
-        print("点击选择模板")
-
-        time.sleep(3)
+        time.sleep(3) #等待新框出现
         self.get_element(self.select).click()
-        # option = self.driver.find_element(By.XPATH, self.select)
-        # self.driver.execute_script("arguments[0].click();", option)
-        print("点击选择")
-
+        time.sleep(3) #等待新框出现
         self.get_element(self.submitSmsBatchTask).click()
         logger.info("发送常量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图

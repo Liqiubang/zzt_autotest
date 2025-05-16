@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from testcases.test_basepage import *
@@ -20,6 +22,7 @@ def test_login_success(fixture_browser):
 def test_send_sms(test_login_success):
     page = TestSendSmsPage(test_login_success)
     page.sendSms()
+    time.sleep(10) #等待提示加载完成
     assert page.get_element(page.result).text == "检测完成，未发现异常！"
 
 if __name__ == '__main__':

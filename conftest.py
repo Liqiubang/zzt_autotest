@@ -10,6 +10,7 @@ options.add_argument("--disable-extensions")       # 禁用扩展
 options.add_argument("--disable-gpu")              # 关闭 GPU 加速
 options.add_argument("--no-sandbox")               # 关闭沙箱模式
 
+
 @pytest.fixture(autouse=False, scope="session")
 def fixture_browser():
     """全局浏览器管理fixture"""

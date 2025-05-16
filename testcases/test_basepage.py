@@ -15,6 +15,7 @@ from selenium.webdriver.common.action_chains import ActionChains  # 动作类
 logger = logging.getLogger(__name__)
 
 
+
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver

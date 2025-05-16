@@ -19,6 +19,7 @@ def query_from_ck(date_param=None):
         return data
 
 
+
 if __name__ == '__main__':
     query_from_ck()  # 自动使用当天日期
     # query_from_ck('2025-05-16')  # 指定日期查询

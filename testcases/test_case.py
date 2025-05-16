@@ -37,5 +37,6 @@ def test_send_sms(test_login_success):
         "【创蓝云智】测试 www.baidu.com 测试拒收请回复R") and report.__eq__("DELIVRD")
 
 
+
 if __name__ == '__main__':
     test_send_sms()

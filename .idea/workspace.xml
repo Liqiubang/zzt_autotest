@@ -4,13 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt连接ck">
+    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt变量短信">
+      <change afterPath="$PROJECT_DIR$/allure-results/01c85800-39c6-446a-a18c-7d45afab2542-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/041b19db-920e-4b5e-8fec-fc76e92fd593-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/054a520a-7871-43c2-b952-7a9c5cd33d4b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/16b503ba-e478-43ef-a5fe-bce72e26f3e2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2d3ff517-cd88-412a-b20e-71024f162d86-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3233f207-1158-4fb8-bfc3-b353dbe41294-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/36ef3783-23b0-4d6f-8e4f-7ed711e0f63d-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4ed9ea05-3518-485b-9b10-686b033b296a-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/560ac44c-c84d-42db-b8c5-9fe98e3408c0-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/737bc46d-9f10-49eb-9402-36444b8252dd-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/864b325f-60c3-48fe-9746-176e1769ce87-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/86f1c9a6-8a6f-4fb7-84fd-53a4d127ff2e-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/97302612-04b4-44d5-a995-293fb11a8626-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a290f298-f338-4ba4-b3f1-fa042050f020-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a5086293-c254-4875-9854-ac53e7329d02-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a9650c5f-3f78-4569-bf4f-393b9721596e-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ad49dee1-2b66-4121-b65d-381f954ea4ba-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b0a05bbb-c3cb-460e-8136-e0e8dbe2bb4f-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b56ea119-1c55-471f-938c-0082cacb7ff5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bad8e5ac-3cf5-41e0-8630-96f393792612-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cac0e290-ecc4-485a-99e9-1214c9d849bb-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d2d2619a-131b-4708-8e2a-cc0b2c81015b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d8a27020-c1b4-4372-a46b-fc42f6a7e70d-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ec5a8d3d-35e3-4ff4-b0ed-be5a8d02554e-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/fc75007d-3615-44fe-97d8-20702f1108e4-attachment.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old.png" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old_square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old_square.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_case.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,24 +62,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests in test_case.py.executor": "Run",
-    "Python.database_ck.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_case.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_ck.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest" />
@@ -154,7 +176,8 @@
       <workItem from="1747033304360" duration="13774000" />
       <workItem from="1747101687410" duration="9199000" />
       <workItem from="1747119097384" duration="15219000" />
-      <workItem from="1747359753934" duration="21848000" />
+      <workItem from="1747359753934" duration="21985000" />
+      <workItem from="1747389149316" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />
@@ -260,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747382897592</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="zzt变量短信">
+      <option name="closed" value="true" />
+      <created>1747388050361</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747388050361</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

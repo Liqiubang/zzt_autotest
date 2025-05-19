@@ -19,26 +19,27 @@ logger = logging.getLogger(__name__)
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 60)
+        self.wait = WebDriverWait(driver, 15)
 
     def get_element(self, xpath):
         logger.info(f"正在定位元素：{xpath=}")
         allure.attach(self.driver.get_screenshot_as_png(), name="定位元素截图",
                       attachment_type=allure.attachment_type.PNG)  # 定位前截图
         el = self.wait.until(
-            EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象 自动等待元素出现 参数是元组，所以要多加一组小括号
-        # EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
+        # EC.presence_of_element_located((By.XPATH, xpath))) # 快速判断元素加载完成（如页面跳转后）
+        # EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象,自动等待元素出现,参数是元组
+        EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
         logger.info(f"元素定位成功：tag_name{el.tag_name}")
         return el
 
-    def __getattr__(self, item):  # 访问不存在的属性时触发  item=username
-        if not item.startswith('_loc_'):  # 避免递归调用
-            key = f"_loc_{item}"  # 动态生成属性名 key=_loc_username
-            xpath = getattr(self, key)  # 获取_loc_username的属性值  与__getattr__作用不一样
-            # pdb.set_trace()
-            if xpath is not None:
-                return self.get_element(xpath)
-        raise AttributeError(f"属性 '{item}' 不存在")
+    # def __getattr__(self, item):  # 访问不存在的属性时触发  item=username
+    #     if not item.startswith('_loc_'):  # 避免递归调用
+    #         key = f"_loc_{item}"  # 动态生成属性名 key=_loc_username
+    #         xpath = getattr(self, key)  # 获取_loc_username的属性值  与__getattr__作用不一样
+    #         # pdb.set_trace()
+    #         if xpath is not None:
+    #             return self.get_element(xpath)
+    #     raise AttributeError(f"属性 '{item}' 不存在")
 
     def alert_ok(self):
         logger.info("正在处理弹窗")
@@ -228,8 +229,11 @@ class TestSendVariableSmsPage(TestBasePage):
 
     def sendVariableSms(self):
         logger.info("准备发送变量短信")
+        self.driver.get("https://cloudsit.cm253.com/control/sms/cl_market_sms/variableSend")
         self.get_element(self.variableSmsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
         self.get_element(self.insertTxt).click()
+        time.sleep(5)
         logger.info("发送变量短信完成")
+        allure.attach(self.driver.get_screenshot_as_png(), "变量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图

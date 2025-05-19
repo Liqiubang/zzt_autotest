@@ -21,9 +21,7 @@ def test_login_success(fixture_browser):
     page.login("16673532843", "Li94122334@")
     assert fixture_browser.current_url == "https://cloudsit.cm253.com/control/home"
     logger.info("登录成功")
-    yield fixture_browser
-    fixture_browser.refresh()
-    time.sleep(60)
+    return fixture_browser
 
 
 @pytest.mark.smoke
@@ -31,15 +29,21 @@ def test_login_success(fixture_browser):
 def test_send_constant_sms(test_login_success):
     page = TestSendConstantSmsPage(test_login_success)
     page.sendConstantSms()
-    ckResult = query_from_ck()
-    content = str(ckResult[0][36])
-    report = str(ckResult[0][40])
+
+    try:
+        ckResult = query_from_ck()
+        content = str(ckResult[0][36])
+        report = str(ckResult[0][40])
+    except IndexError:
+        print("索引异常，请检查数据库中数据！")
+
     assert page.get_element(page.result).text == "已经成功提交发送" and content.__eq__(
         "【创蓝云智】测试 www.baidu.com 测试拒收请回复R") and report.__eq__("DELIVRD")
 
 @pytest.mark.smoke
 # @pytest.mark.parametrize("phone", [15274438093, 15274438094])
 def test_send_variable_sms(test_login_success):
+    print("test_send_variable_sms")
     page = TestSendVariableSmsPage(test_login_success)
     page.sendVariableSms()
 

@@ -13,7 +13,7 @@ def query_from_ck(date_param=None):
             "SELECT * FROM mt_msg_merge  final WHERE account=:account AND ptt_day=:day order by createTime  desc")
         result = conn.execute(sql, {'account': 'M5865357', 'day': query_date})
         data = result.fetchall()
-        print(data)
+        print(f"数据库返回数据：{data}")
         print(f"短信内容：{data[0][36]}，状态：{data[0][40]}", )
         # print(data[0]._fields) # 获取字段名
         return data

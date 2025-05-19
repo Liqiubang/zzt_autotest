@@ -29,7 +29,7 @@ def test_login_success(fixture_browser):
 def test_send_constant_sms(test_login_success):
     page = TestSendConstantSmsPage(test_login_success)
     page.sendConstantSms()
-
+    time.sleep(10) # 等待入库
     try:
         ckResult = query_from_ck()
         content = str(ckResult[0][36])
@@ -43,9 +43,18 @@ def test_send_constant_sms(test_login_success):
 @pytest.mark.smoke
 # @pytest.mark.parametrize("phone", [15274438093, 15274438094])
 def test_send_variable_sms(test_login_success):
-    print("test_send_variable_sms")
     page = TestSendVariableSmsPage(test_login_success)
     page.sendVariableSms()
+    time.sleep(10)  # 等待入库
+    try:
+        ckResult = query_from_ck()
+        content = str(ckResult[0][36])
+        report = str(ckResult[0][40])
+    except IndexError:
+        print("索引异常，请检查数据库中数据！")
+
+    assert page.get_element(page.result).text == "已经成功提交发送" and content.__eq__(
+        "【创蓝云智】测试 www.baidu.com 测试拒收请回复R") and report.__eq__("DELIVRD")
 
 
 if __name__ == '__main__':

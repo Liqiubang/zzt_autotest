@@ -26,9 +26,9 @@ class TestBasePage:
         allure.attach(self.driver.get_screenshot_as_png(), name="定位元素截图",
                       attachment_type=allure.attachment_type.PNG)  # 定位前截图
         el = self.wait.until(
-        # EC.presence_of_element_located((By.XPATH, xpath))) # 快速判断元素加载完成（如页面跳转后）
-        # EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象,自动等待元素出现,参数是元组
-        EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
+            # EC.presence_of_element_located((By.XPATH, xpath))) # 快速判断元素加载完成（如页面跳转后）
+            # EC.visibility_of_element_located((By.XPATH, xpath)))  # 元素可见时返回元素对象,自动等待元素出现,参数是元组
+            EC.element_to_be_clickable((By.XPATH, xpath)))  # 元素不仅需要可见，还需满足可交互条件
         logger.info(f"元素定位成功：tag_name{el.tag_name}")
         return el
 
@@ -190,7 +190,7 @@ class TestSendConstantSmsPage(TestBasePage):
         self.manualAdd = "//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
         self.inputMobile = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/span/input"
         self.confirmBtn = "/html/body/div[4]/div/div[2]/div/div[2]/div[3]/button[2]/span"
-        self.selectConstantTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
+        self.selectTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
         self.inputTemplateContent = "//div[@class='sms-modal-body']//input[@placeholder='请输入模板内容']"
         self.searchBtn = "//div[@class='sms-modal-body']//span[@class='anticon']"
         self.select = "//div[@class='sms-table-body']//a"
@@ -207,7 +207,7 @@ class TestSendConstantSmsPage(TestBasePage):
         self.get_element(self.inputMobile).send_keys("15274438093")
         self.get_element(self.confirmBtn).click()
         time.sleep(3)  # 等待号码输入框关闭
-        self.get_element(self.selectConstantTemplate).click()
+        self.get_element(self.selectTemplate).click()
         self.get_element(self.inputTemplateContent).send_keys("测试 www.baidu.com 测试")
         self.get_element(self.searchBtn).click()
         self.get_element(self.select).click()
@@ -219,13 +219,14 @@ class TestSendConstantSmsPage(TestBasePage):
 
 
 # 发送变量短信
-class TestSendVariableSmsPage(TestBasePage):
+class TestSendVariableSmsPage(TestSendConstantSmsPage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
         self.variableSmsSend = "//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[2]"
         self.smsBatchSendBtn = "//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/div/button/span"
         self.insertVariableContent = "//*[@id='onlinesendForm']/div[3]/div[2]/div/div/div[1]/div/button/span[2]"
-        self.insertTxt = "//div[@class='sms-modal-body']//span[@class='anticon']"
+        self.fileInputLocator = "//div[@class='sms-modal-body']//input"
+        self.beginUpload = "//div[@class='sms-modal-body']//span[text()='开始上传']"
 
     def sendVariableSms(self):
         logger.info("准备发送变量短信")
@@ -233,7 +234,22 @@ class TestSendVariableSmsPage(TestBasePage):
         self.get_element(self.variableSmsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
-        self.get_element(self.insertTxt).click()
-        time.sleep(5)
+
+        file_input = self.driver.find_element(By.XPATH, self.fileInputLocator)
+        self.driver.execute_script(
+            "arguments[0].style.display='block'; arguments[0].click();",
+            file_input
+        )
+        file_input.send_keys('C:\\Users\\15274\\Downloads\\guoneibianliang.txt')
+
+        self.get_element(self.beginUpload).click()
+        time.sleep(10)  # 等待变量上传框关闭
+        self.get_element(self.selectTemplate).click()
+        self.get_element(self.inputTemplateContent).send_keys("测试 www.baidu.com 测试")
+        self.get_element(self.searchBtn).click()
+        self.get_element(self.select).click()
+        time.sleep(3)  # 等待选择模板框关闭
+        self.get_element(self.submitSmsBatchTask).click()
+        self.get_element(self.sendNow).click()
         logger.info("发送变量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "变量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图

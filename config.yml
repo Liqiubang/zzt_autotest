@@ -1,0 +1,17 @@
+environments:
+  sit:
+    login_url: "https://cloudsit.cm253.com/control/login"
+    username: "16673532843"
+    password: "Li94122334@"
+    control_url : "https://cloudsit.cm253.com/control/home"
+    constantTemplate : "测试 www.baidu.com 测试"
+    variableTemplate : "白模版测试【测试】{s}"
+    variableSend_url : "https://cloudsit.cm253.com/control/sms/cl_market_sms/variableSend"
+  prod:
+    login_url: "https://www.chuanglan.com/control/login"
+    username: "15274438093"
+    password: "Li94122334@"
+    control_url: "https://www.chuanglan.com/control/home"
+    constantTemplate : "测试 www.baidu.com 短信"
+    variableTemplate : "白模版测试【测试】{s}"
+    variableSend_url : "https://www.chuanglan.com/control/sms/cl_market_sms/variableSend"

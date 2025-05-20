@@ -13,6 +13,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains  # 动作类
 
+from conftest import env_config
+
 logger = logging.getLogger(__name__)
 
 
@@ -198,18 +200,20 @@ class TestSendConstantSmsPage(TestBasePage):
         self.sendNow = "//div[@class='sms-modal-body']//span[text()='立即发送']"
         self.result = "//div[@class='ant-modal-body']//div[@class='ant-modal-confirm-content']"
 
-    def sendConstantSms(self):
+    def sendConstantSms(self,env_config):
         logger.info("准备发送常量短信")
         self.get_element(self.marketingSms).click()
         self.get_element(self.smsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.manualAdd).click()
-        self.get_element(self.inputMobile).send_keys("15274438093")
+        self.get_element(self.inputMobile).send_keys("15274438093,13203173318,19074910586")
         self.get_element(self.confirmBtn).click()
         time.sleep(3)  # 等待号码输入框关闭
         self.get_element(self.selectTemplate).click()
-        self.get_element(self.inputTemplateContent).send_keys("测试 www.baidu.com 测试")
+        constantTemplate = f"{env_config['constantTemplate']}"
+        self.get_element(self.inputTemplateContent).send_keys(constantTemplate)
         self.get_element(self.searchBtn).click()
+        time.sleep(3)  # 等待搜索完成
         self.get_element(self.select).click()
         time.sleep(3)  # 等待选择模板框关闭
         self.get_element(self.submitSmsBatchTask).click()
@@ -228,9 +232,11 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.fileInputLocator = "//div[@class='sms-modal-body']//input"
         self.beginUpload = "//div[@class='sms-modal-body']//span[text()='开始上传']"
 
-    def sendVariableSms(self):
+
+    def sendVariableSms(self,env_config):
         logger.info("准备发送变量短信")
-        self.driver.get("https://cloudsit.cm253.com/control/sms/cl_market_sms/variableSend")
+        variableSend_url = f"{env_config['variableSend_url']}"
+        self.driver.get(variableSend_url)
         self.get_element(self.variableSmsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
@@ -245,8 +251,10 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.get_element(self.beginUpload).click()
         time.sleep(10)  # 等待变量上传框关闭
         self.get_element(self.selectTemplate).click()
-        self.get_element(self.inputTemplateContent).send_keys("测试 www.baidu.com 测试")
+        variableTemplate = f"{env_config['variableTemplate']}"
+        self.get_element(self.inputTemplateContent).send_keys(variableTemplate)
         self.get_element(self.searchBtn).click()
+        time.sleep(3)  # 等待搜索完成
         self.get_element(self.select).click()
         time.sleep(3)  # 等待选择模板框关闭
         self.get_element(self.submitSmsBatchTask).click()

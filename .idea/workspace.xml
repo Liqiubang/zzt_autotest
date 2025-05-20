@@ -4,89 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt变量短信发送完成">
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/21bf865791db1632.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/256abc8f71ee74e9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/301a5c94b3c0b946.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/3142634d300bae04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/3363dc338e622925.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/35158c1ee8dc3243.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/390a2eb7a7ce5d5a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/4a3df0ab11952802.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/4f9df85eea3bed70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/5ca930df5a64c00d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/620179d69c6e9cdd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/6e8556c59d090ea9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/712e520d3ffa49ef.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/8a27ed7c274de180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/8b528daf9ca0097f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/989bd7c6fab8bfcc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/9aee77b6b1fc1af0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/aa6784903a74cac1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/c0b42df0fcbf9c91.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/c4d47a82cca68f59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/c56fa503867ae134.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/c90969a456c3d88e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/cf2c1028ce9eaab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/d01290ae7635ec5d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/d67c38c43bd77cea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/e3caef398ad8dc92.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/e96f10633d244555.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/eb9486298c088a66.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/ed1b5ca5910a16a0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/f18f40b07e2e4958.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/f451c6805c4ea9a6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/attachments/ff198780d3f03f90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/behaviors.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/behaviors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/packages.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/suites.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/suites.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/test-cases/39cad948615ad1b5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/test-cases/7705aa1232ee9919.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/timeline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/influxDbData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/mail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/prometheusData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/categories-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/duration-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/history-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/retry-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/behaviors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/packages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/screen-diff/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/screen-diff/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/behaviors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/categories-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/duration-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/duration.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/environment.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/executors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/history-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/retry-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/severity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/status-chart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/suites.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/summary.json" afterDir="false" />
+    <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt测试、生产环境">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.log" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old.png" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old_square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old_square.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database_ck.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database_ck.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +65,7 @@
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\TestCases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.database_ck">
+  <component name="RunManager" selected="Python tests.Python tests in test_case.py">
     <configuration name="database_ck" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zzt_autotest" />
       <option name="ENV_FILES" value="" />
@@ -206,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.database_ck" />
         <item itemvalue="Python tests.Python tests in test_case.py" />
+        <item itemvalue="Python.database_ck" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +158,8 @@
       <workItem from="1747389149316" duration="1192000" />
       <workItem from="1747625102921" duration="17697000" />
       <workItem from="1747651499457" duration="7815000" />
-      <workItem from="1747710454830" duration="2097000" />
+      <workItem from="1747710454830" duration="6473000" />
+      <workItem from="1747723440863" duration="3007000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />
@@ -356,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747638348792</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="zzt测试、生产环境">
+      <option name="closed" value="true" />
+      <created>1747712679485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747712679485</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,10 +304,11 @@
     <MESSAGE value="zzt连接ck" />
     <MESSAGE value="zzt变量短信" />
     <MESSAGE value="zzt变量短信发送完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="zzt变量短信发送完成" />
+    <MESSAGE value="zzt测试、生产环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="zzt测试、生产环境" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1747128293584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+    <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1747723240885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/zzt_autotest$database_ck.coverage" NAME="database_ck Coverage Results" MODIFIED="1747381534383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>

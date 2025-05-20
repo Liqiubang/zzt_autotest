@@ -12,9 +12,7 @@ from selenium.webdriver.support.expected_conditions import alert_is_present
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains  # 动作类
-
 from conftest import env_config
-
 logger = logging.getLogger(__name__)
 
 
@@ -89,8 +87,9 @@ class TestLoginSuccessPage(TestBasePage):
         # 新缺口坐标=原缺口坐标*新画布宽度/原画布宽度
         newDis = int(dis * 330 / 672 - 35)
         # 添加调试输出验证计算值
+        # print(f"小滑块x坐标：{smallImage.location['x']}")
         print(
-            f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:30 | 计算移动距离:{newDis}")
+            f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:35 | 计算移动距离:{newDis}")
         time.sleep(1)
 
         # 按下小滑块按钮不动

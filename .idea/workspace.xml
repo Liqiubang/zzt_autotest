@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt测试、生产环境">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytest.log" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old.png" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old_square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old_square.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_case.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <workItem from="1747625102921" duration="17697000" />
       <workItem from="1747651499457" duration="7815000" />
       <workItem from="1747710454830" duration="6473000" />
-      <workItem from="1747723440863" duration="3007000" />
+      <workItem from="1747723440863" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />
@@ -289,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747712679485</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="zzt测试、生产环境">
+      <option name="closed" value="true" />
+      <created>1747726782600</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1747726782600</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

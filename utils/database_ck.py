@@ -5,7 +5,6 @@ from datetime import datetime
 def query_from_ck(date_param=None):
     # 默认使用当天日期
     query_date = date_param if date_param else datetime.now().strftime('%Y-%m-%d')
-
     engine = create_engine('clickhouse://root:123456@192.168.2.42:8123/mt_sms_sit')
     with engine.connect() as conn:
         sql = text(

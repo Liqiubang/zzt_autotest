@@ -189,8 +189,8 @@ class TestSendConstantSmsPage(TestBasePage):
         self.smsSend = "//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[1]"
         self.smsBatchSendBtn = "//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/button/span"
         self.manualAdd = "//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
-        self.inputMobile = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/span/input"
-        self.confirmBtn = "/html/body/div[4]/div/div[2]/div/div[2]/div[3]/button[2]/span"
+        self.inputMobile = "//div[@class='sms-modal-body']//input"
+        self.confirmBtn = "//div[@class='sms-modal-content']//span[text()='确 定']"
         self.selectTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
         self.inputTemplateContent = "//div[@class='sms-modal-body']//input[@placeholder='请输入模板内容']"
         self.searchBtn = "//div[@class='sms-modal-body']//span[@class='anticon']"
@@ -198,19 +198,22 @@ class TestSendConstantSmsPage(TestBasePage):
         self.submitSmsBatchTask = "//*[@id='onlinesendForm']/div[8]/div/div/div/div/div[2]/button/span"
         self.sendNow = "//div[@class='sms-modal-body']//span[text()='立即发送']"
         self.result = "//div[@class='ant-modal-body']//div[@class='ant-modal-confirm-content']"
+        self.sendRecord = "//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
 
-    def sendConstantSms(self,env_config):
+    def sendConstantSms(self,env_config,phone):
         logger.info("准备发送常量短信")
-        self.get_element(self.marketingSms).click()
+        # self.get_element(self.marketingSms).click() # 不必先点击会员营销短信，可以直接跳到短信发送页面
+        constantsend_url = f"{env_config['constantsend_url']}"
+        self.driver.get(constantsend_url)
         self.get_element(self.smsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.manualAdd).click()
-        self.get_element(self.inputMobile).send_keys("15274438093,13203173318,19074910586")
+        self.get_element(self.inputMobile).send_keys(phone)
         self.get_element(self.confirmBtn).click()
         time.sleep(3)  # 等待号码输入框关闭
         self.get_element(self.selectTemplate).click()
-        constantTemplate = f"{env_config['constantTemplate']}"
-        self.get_element(self.inputTemplateContent).send_keys(constantTemplate)
+        constant_template = f"{env_config['constant_template']}"
+        self.get_element(self.inputTemplateContent).send_keys(constant_template)
         self.get_element(self.searchBtn).click()
         time.sleep(3)  # 等待搜索完成
         self.get_element(self.select).click()
@@ -219,6 +222,11 @@ class TestSendConstantSmsPage(TestBasePage):
         self.get_element(self.sendNow).click()
         logger.info("发送常量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
+
+        time.sleep(30)  # 等待发送完成
+        sendrecords_url = f"{env_config['sendrecords_url']}"
+        self.driver.get(sendrecords_url)
+
 
 
 # 发送变量短信
@@ -234,9 +242,9 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
 
     def sendVariableSms(self,env_config):
         logger.info("准备发送变量短信")
-        variableSend_url = f"{env_config['variableSend_url']}"
-        self.driver.get(variableSend_url)
-        self.get_element(self.variableSmsSend).click()
+        variablesend_url = f"{env_config['variablesend_url']}"
+        self.driver.get(variablesend_url)
+        # self.get_element(self.variableSmsSend).click() # 不必先点击变量短信发送，可以直接跳到变量短信发送页面
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
 
@@ -250,8 +258,8 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.get_element(self.beginUpload).click()
         time.sleep(10)  # 等待变量上传框关闭
         self.get_element(self.selectTemplate).click()
-        variableTemplate = f"{env_config['variableTemplate']}"
-        self.get_element(self.inputTemplateContent).send_keys(variableTemplate)
+        variable_template = f"{env_config['variable_template']}"
+        self.get_element(self.inputTemplateContent).send_keys(variable_template)
         self.get_element(self.searchBtn).click()
         time.sleep(3)  # 等待搜索完成
         self.get_element(self.select).click()
@@ -260,3 +268,7 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.get_element(self.sendNow).click()
         logger.info("发送变量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "变量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
+
+        time.sleep(30) # 等待发送完成
+        sendrecords_url = f"{env_config['sendrecords_url']}"
+        self.driver.get(sendrecords_url)

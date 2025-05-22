@@ -3,8 +3,8 @@ import pytest
 from testcases.test_basepage import *
 import logging
 from utils.database_ck import query_from_ck
-
 logger = logging.getLogger(__name__)
+print()
 
 """pytest 会通过 ‌参数名匹配‌ 自动查找conftest.py 并注入已注册的夹具（fixture_browser）
 并将其返回值（即 driver 对象）传递给测试函数"""

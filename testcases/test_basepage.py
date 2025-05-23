@@ -13,13 +13,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains  # 动作类
 from conftest import env_config
+
 logger = logging.getLogger(__name__)
 
 
 class TestBasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, 30)
 
     def get_element(self, xpath):
         logger.info(f"正在定位元素：{xpath=}")
@@ -55,15 +56,14 @@ class TestLoginSuccessPage(TestBasePage):
         super().__init__(driver)  # 调用基类构造函数
         self.username = "//input[@id='username']"
         self.password = "//input[@id='password']"
-        self.login_btn = "//*[@id='clApp']/div/div[1]/div[2]/div[2]/div/div/form/div[4]/div/div/div/button/span[1]"
+        self.login_btn = "//*[@id='clApp']//span[text()='登录']"
 
     def login(self, username, password):
         logger.info("准备登录")
         self.get_element(self.username).send_keys(username)
         self.get_element(self.password).send_keys(password)
         self.get_element(self.login_btn).click()
-        time.sleep(3)
-
+        time.sleep(3)  # 等待图片加载完成
         # 解决登录时的滑块验证问题
         bigImage = self.driver.find_element(By.XPATH,
                                             "//div[@class='tencent-captcha-dy__verify-bg-img tencent-captcha-dy__unselectable']")
@@ -90,7 +90,6 @@ class TestLoginSuccessPage(TestBasePage):
         # print(f"小滑块x坐标：{smallImage.location['x']}")
         print(
             f"老画布宽：672，老缺口x坐标dis:{dis} | 新画布宽：330，新缺口x坐标:{dis * 330 / 672} | 小滑块初始x坐标:35 | 计算移动距离:{newDis}")
-        time.sleep(1)
 
         # 按下小滑块按钮不动
         ActionChains(self.driver).click_and_hold(smallImage).perform()
@@ -105,7 +104,7 @@ class TestLoginSuccessPage(TestBasePage):
             i += 1
         # 移动完之后，松开鼠标
         ActionChains(self.driver).release().perform()
-        time.sleep(5)
+        time.sleep(5)  # 等待进入控制台页面
         logger.info("登录成功")
         allure.attach(self.driver.get_screenshot_as_png(), "登录成功截图", allure.attachment_type.PNG)  # 交互后截图
 
@@ -185,90 +184,69 @@ class TestLoginSuccessPage(TestBasePage):
 class TestSendConstantSmsPage(TestBasePage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
-        self.marketingSms = "//*[@id='clApp']/div/div[3]/div/div/div/div[1]/div/div[3]/div/div[2]/div/div/div//div[text()='会员营销短信']"
         self.smsSend = "//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[1]"
         self.smsBatchSendBtn = "//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/button/span"
         self.manualAdd = "//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
         self.inputMobile = "//div[@class='sms-modal-body']//input"
         self.confirmBtn = "//div[@class='sms-modal-content']//span[text()='确 定']"
-        self.selectTemplate = "//*[@id='onlinesendForm']/div[4]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/span[2]"
-        self.inputTemplateContent = "//div[@class='sms-modal-body']//input[@placeholder='请输入模板内容']"
-        self.searchBtn = "//div[@class='sms-modal-body']//span[@class='anticon']"
-        self.select = "//div[@class='sms-table-body']//a"
-        self.submitSmsBatchTask = "//*[@id='onlinesendForm']/div[8]/div/div/div/div/div[2]/button/span"
+        self.inputTemplateContent = "//div[@class='sms-form-item-control-input-content']//div[@role='textbox']"
+        self.submitSmsBatchTask = "//*[@id='onlinesendForm']//span[text()='提交短信群发任务']"
         self.sendNow = "//div[@class='sms-modal-body']//span[text()='立即发送']"
         self.result = "//div[@class='ant-modal-body']//div[@class='ant-modal-confirm-content']"
         self.sendRecord = "//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
 
-    def sendConstantSms(self,env_config,phone):
+    def sendConstantSms(self, env_config, phone):
         logger.info("准备发送常量短信")
-        # self.get_element(self.marketingSms).click() # 不必先点击会员营销短信，可以直接跳到短信发送页面
-        constantsend_url = f"{env_config['constantsend_url']}"
-        self.driver.get(constantsend_url)
+        constant_send_url = f"{env_config['constant_send_url']}"
+        self.driver.get(constant_send_url)
         self.get_element(self.smsSend).click()
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.manualAdd).click()
         self.get_element(self.inputMobile).send_keys(phone)
         self.get_element(self.confirmBtn).click()
         time.sleep(3)  # 等待号码输入框关闭
-        self.get_element(self.selectTemplate).click()
         constant_template = f"{env_config['constant_template']}"
         self.get_element(self.inputTemplateContent).send_keys(constant_template)
-        self.get_element(self.searchBtn).click()
-        time.sleep(3)  # 等待搜索完成
-        self.get_element(self.select).click()
-        time.sleep(3)  # 等待选择模板框关闭
+        time.sleep(3)  # 等待输入完成
         self.get_element(self.submitSmsBatchTask).click()
         self.get_element(self.sendNow).click()
         logger.info("发送常量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
-
-        time.sleep(30)  # 等待发送完成
-        sendrecords_url = f"{env_config['sendrecords_url']}"
-        self.driver.get(sendrecords_url)
-
+        time.sleep(60)  # 等待发送完成
+        send_records_url = f"{env_config['send_records_url']}"
+        self.driver.get(send_records_url)
 
 
 # 发送变量短信
 class TestSendVariableSmsPage(TestSendConstantSmsPage):
     def __init__(self, driver):
         super().__init__(driver)  # 调用基类构造函数
-        self.variableSmsSend = "//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[2]"
         self.smsBatchSendBtn = "//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/div/button/span"
         self.insertVariableContent = "//*[@id='onlinesendForm']/div[3]/div[2]/div/div/div[1]/div/button/span[2]"
         self.fileInputLocator = "//div[@class='sms-modal-body']//input"
         self.beginUpload = "//div[@class='sms-modal-body']//span[text()='开始上传']"
 
-
-    def sendVariableSms(self,env_config):
+    def sendVariableSms(self, env_config):
         logger.info("准备发送变量短信")
-        variablesend_url = f"{env_config['variablesend_url']}"
-        self.driver.get(variablesend_url)
-        # self.get_element(self.variableSmsSend).click() # 不必先点击变量短信发送，可以直接跳到变量短信发送页面
+        variable_send_url = f"{env_config['variable_send_url']}"
+        self.driver.get(variable_send_url)
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
-
         file_input = self.driver.find_element(By.XPATH, self.fileInputLocator)
         self.driver.execute_script(
             "arguments[0].style.display='block'; arguments[0].click();",
             file_input
         )
         file_input.send_keys('C:\\Users\\15274\\Downloads\\guoneibianliang.txt')
-
         self.get_element(self.beginUpload).click()
-        time.sleep(10)  # 等待变量上传框关闭
-        self.get_element(self.selectTemplate).click()
+        time.sleep(15)  # 等待变量上传框关闭
         variable_template = f"{env_config['variable_template']}"
         self.get_element(self.inputTemplateContent).send_keys(variable_template)
-        self.get_element(self.searchBtn).click()
-        time.sleep(3)  # 等待搜索完成
-        self.get_element(self.select).click()
-        time.sleep(3)  # 等待选择模板框关闭
+        time.sleep(3)  # 等待输入完成
         self.get_element(self.submitSmsBatchTask).click()
         self.get_element(self.sendNow).click()
         logger.info("发送变量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "变量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
-
-        time.sleep(30) # 等待发送完成
-        sendrecords_url = f"{env_config['sendrecords_url']}"
-        self.driver.get(sendrecords_url)
+        time.sleep(60)  # 等待发送完成
+        send_records_url = f"{env_config['send_records_url']}"
+        self.driver.get(send_records_url)

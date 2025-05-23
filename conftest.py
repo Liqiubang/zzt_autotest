@@ -3,13 +3,17 @@ import pytest
 from selenium.webdriver.chrome.options import Options
 from webdriver_helper import get_webdriver
 import logging
+
 logger = logging.getLogger(__name__)
 import yaml
+
 options = Options()
-# options.add_argument("--headless=new")  # Chrome 112+ 推荐语法
-options.add_argument("--disable-extensions")       # 禁用扩展
-options.add_argument("--disable-gpu")              # 关闭 GPU 加速
-options.add_argument("--no-sandbox")               # 关闭沙箱模式
+# options.add_argument("--headless")  # Chrome 112+ 推荐语法
+options.add_argument("--disable-extensions")  # 禁用扩展
+options.add_argument("--disable-gpu")  # 关闭 GPU 加速
+options.add_argument("--no-sandbox")  # 关闭沙箱模式
+options.add_experimental_option("detach", True)  # 防止会话结束后自动关闭，保持浏览器实例复用，减少重复初始化
+
 
 @pytest.fixture(autouse=False, scope="session")
 def fixture_browser():
@@ -20,9 +24,11 @@ def fixture_browser():
     yield driver
     driver.quit()
 
+
 def load_config():
-    with open('config.yml', 'r', encoding='utf-8') as f:
+    with open('C:\\Users\\15274\\PycharmProjects\\zzt_autotest\\config\\config.yml', 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
+
 
 @pytest.fixture(scope="session")
 def env_config():

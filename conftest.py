@@ -32,7 +32,7 @@ def load_config():
 
 @pytest.fixture(scope="session")
 def env_config():
-    env = os.getenv("sit", "sit")
-    # env = os.getenv("prod", "prod")
+    # env = os.getenv("sit", "sit")
+    env = os.getenv("prod", "prod")
     config = load_config()
     return config["environments"][env]

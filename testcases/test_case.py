@@ -48,6 +48,7 @@ def test_send_constant_sms(test_login_success, env_config, phone):
         logger.info(
             f"断言 实际短信内容:{content} 断言内容:{assert_constant_template}\n 实际短信状态:{report} 断言状态:{assert_report}")
     else:
+        time.sleep(10)  # 等待入库
         assert page.get_element(page.sendRecord).text == assert_constant_template
         logger.info(
             f"断言 实际短信内容:{page.get_element(page.sendRecord).text} 断言内容:{assert_constant_template}\n ")
@@ -74,6 +75,7 @@ def test_send_variable_sms(test_login_success, env_config):
         logger.info(
             f"断言 实际短信内容:{content} 断言内容:{assert_variable_template}\n 实际短信状态:{report} 断言状态:{assert_report}")
     else:
+        time.sleep(10)  # 等待入库
         assert page.get_element(page.sendRecord).text == assert_variable_template
         logger.info(
             f"断言 实际短信内容:{page.get_element(page.sendRecord).text} 断言内容:{assert_variable_template}\n ")

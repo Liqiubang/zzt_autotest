@@ -1,11 +1,56 @@
-2025-05-23 18:13:51 WARNING [selenium.webdriver.common.selenium_manager:138] The chromedriver version (135.0.7049.84) detected in PATH at D:\python\Scripts\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.114); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
-2025-05-23 18:13:53 INFO [conftest:23] 夹具初始化完成，浏览器启动成功
-2025-05-23 18:13:53 INFO [test_case:15] 浏览器已启动
-2025-05-23 18:14:34 INFO [testcases.test_basepage:62] 准备登录
-2025-05-23 18:14:34 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//input[@id='username']"
-2025-05-23 18:14:34 INFO [testcases.test_basepage:33] 元素定位成功：tag_nameinput
-2025-05-23 18:14:34 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//input[@id='password']"
-2025-05-23 18:14:34 INFO [testcases.test_basepage:33] 元素定位成功：tag_nameinput
-2025-05-23 18:14:35 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='clApp']//span[text()='登录']"
-2025-05-23 18:14:35 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
-2025-05-23 18:14:44 INFO [testcases.test_basepage:108] 登录成功
+2025-05-26 09:57:29 WARNING [selenium.webdriver.common.selenium_manager:138] The chromedriver version (135.0.7049.84) detected in PATH at D:\python\Scripts\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.114); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+2025-05-26 09:57:30 INFO [conftest:23] 夹具初始化完成，浏览器启动成功
+2025-05-26 09:57:30 INFO [test_case:15] 浏览器已启动
+2025-05-26 09:57:31 INFO [testcases.test_basepage:62] 准备登录
+2025-05-26 09:57:31 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//input[@id='username']"
+2025-05-26 09:57:36 INFO [testcases.test_basepage:33] 元素定位成功：tag_nameinput
+2025-05-26 09:57:36 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//input[@id='password']"
+2025-05-26 09:57:36 INFO [testcases.test_basepage:33] 元素定位成功：tag_nameinput
+2025-05-26 09:57:36 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='clApp']//span[text()='登录']"
+2025-05-26 09:57:37 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:57:49 INFO [testcases.test_basepage:108] 登录成功
+2025-05-26 09:57:49 INFO [test_case:24] 登录成功
+2025-05-26 09:57:49 INFO [testcases.test_basepage:199] 准备发送常量短信
+2025-05-26 09:57:50 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[1]"
+2025-05-26 09:57:53 INFO [testcases.test_basepage:33] 元素定位成功：tag_namea
+2025-05-26 09:57:53 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/button/span"
+2025-05-26 09:57:54 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:57:54 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
+2025-05-26 09:57:56 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:57:56 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-modal-body']//input"
+2025-05-26 09:57:56 INFO [testcases.test_basepage:33] 元素定位成功：tag_nameinput
+2025-05-26 09:57:56 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-modal-content']//span[text()='确 定']"
+2025-05-26 09:57:56 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:57:59 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-form-item-control-input-content']//div[@role='textbox']"
+2025-05-26 09:57:59 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 09:58:02 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='onlinesendForm']//span[text()='提交短信群发任务']"
+2025-05-26 09:58:03 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:58:03 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='立即发送']"
+2025-05-26 09:58:06 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:58:06 INFO [testcases.test_basepage:213] 发送常量短信完成
+2025-05-26 09:59:16 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-05-26 09:59:17 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 09:59:17 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-05-26 09:59:17 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 09:59:17 INFO [test_case:53] 断言 实际短信内容:【上海木南测试】prod自动化常量模板拒收请回复R 断言内容:【上海木南测试】prod自动化常量模板拒收请回复R
+ 
+2025-05-26 09:59:17 INFO [testcases.test_basepage:230] 准备发送变量短信
+2025-05-26 09:59:18 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/div/button/span"
+2025-05-26 09:59:22 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:59:22 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='onlinesendForm']/div[3]/div[2]/div/div/div[1]/div/button/span[2]"
+2025-05-26 09:59:23 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:59:23 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='开始上传']"
+2025-05-26 09:59:24 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:59:39 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-form-item-control-input-content']//div[@role='textbox']"
+2025-05-26 09:59:39 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 09:59:42 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//*[@id='onlinesendForm']//span[text()='提交短信群发任务']"
+2025-05-26 09:59:42 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:59:42 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='立即发送']"
+2025-05-26 09:59:44 INFO [testcases.test_basepage:33] 元素定位成功：tag_namespan
+2025-05-26 09:59:45 INFO [testcases.test_basepage:248] 发送变量短信完成
+2025-05-26 10:00:55 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-05-26 10:00:56 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 10:00:56 INFO [testcases.test_basepage:26] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-05-26 10:00:56 INFO [testcases.test_basepage:33] 元素定位成功：tag_namediv
+2025-05-26 10:00:56 INFO [test_case:80] 断言 实际短信内容:【上海木南测试】prod自动化变量模板葫芦拒收请回复R 断言内容:【上海木南测试】prod自动化变量模板葫芦拒收请回复R
+ 

@@ -13,7 +13,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains  # 动作类
 from conftest import env_config
-
 logger = logging.getLogger(__name__)
 
 

@@ -1,9 +1,9 @@
+import json
 import time
 import pytest
 from testcases.test_basepage import *
 import logging
 from utils.database_ck import query_from_ck
-
 logger = logging.getLogger(__name__)
 
 """pytest 会通过 ‌参数名匹配‌ 自动查找conftest.py 并注入已注册的夹具（fixture_browser）
@@ -23,6 +23,7 @@ def test_login_success(fixture_browser, env_config):
     assert fixture_browser.current_url == control_url
     logger.info("登录成功")
     return fixture_browser
+
 
 
 @pytest.mark.smoke

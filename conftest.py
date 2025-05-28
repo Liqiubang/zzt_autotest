@@ -3,7 +3,6 @@ import pytest
 from selenium.webdriver.chrome.options import Options
 from webdriver_helper import get_webdriver
 import logging
-
 logger = logging.getLogger(__name__)
 import yaml
 
@@ -32,7 +31,7 @@ def load_config():
 
 @pytest.fixture(scope="session")
 def env_config():
-    # env = os.getenv("sit", "sit")
-    env = os.getenv("prod", "prod")
+    env = os.getenv("sit", "sit")
+    # env = os.getenv("prod", "prod")
     config = load_config()
     return config["environments"][env]

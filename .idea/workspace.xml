@@ -5,176 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f9d6673-5406-4c48-b346-f0f5be0990e5" name="Changes" comment="zzt测试、生产环境">
-      <change afterPath="$PROJECT_DIR$/allure-results/02333b63-e4b7-4676-b3c7-208259b132cb-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0370d1a3-2dff-4d39-bee5-516d5d74b59a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/04c33016-de12-4b50-9da0-9f21add61a39-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/06291d88-4445-4fad-b9ed-e0f18a967a4d-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/08599a17-1b3b-44f6-908c-1d3784eb5faa-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0ca9948c-8b1a-46c9-8602-a9880517f5da-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0d05a336-3a25-4d84-b585-a44dff517c31-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0f005243-246f-474e-a1c4-581e17bc4980-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/110ec626-17b1-4d52-92d1-2bd9b21c39be-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1173d663-b43c-4f6c-bdef-6aef7a9458ab-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/163b4dfe-a7c3-468b-903c-efc7cfdf4012-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/26e60a25-1d4a-4286-8b05-267a4f7ca955-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/280ec6d2-97cc-4b67-b360-44ff2601c741-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/28ba1b97-3b29-4b65-ad8d-f09cbbde7c8e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2c93d1ce-9cc2-4ff9-8c0d-d0dee69ce1cd-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2e8542fa-a2b7-4348-b715-85d2c7572481-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2efcf658-51ec-4a63-8d70-51d80974d713-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/31231363-9631-49f1-b96c-2890ba9f84f4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/313661a9-414e-4099-aab6-2d241a50e3e2-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/31c2df28-3035-4705-be45-5cbd4dd4e3cd-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/32518b53-eeef-4225-8f01-95fff2f21dc1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/387fae5b-64ac-40f2-bbdd-c82809de2cc5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/38d357db-71d6-495f-8c12-d82a97c0384e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3c0102d0-33b7-4b6e-aa73-81b7a2f8122b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3c33e34d-e044-4f0e-a032-8b3a07ff68a6-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3dd3a074-fdc8-4c8f-a16b-1e44445fb9cd-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/405dd55c-578a-4fdd-8cbc-79ffe2962ea6-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/41e62eb4-45d9-49e8-b80e-4d7645619159-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/44258977-921b-46ae-af75-f4aca9cafd48-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/44929a5e-2cb3-4db7-9104-eb7344da9d7e-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4998df3c-4cc0-4003-80db-68071d1b3aec-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4becbcb9-8ed4-4c68-bba3-138b37830ad8-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4fec4a8d-15c0-432b-9799-67b7e4524187-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/50088c02-e7d7-4d93-8731-9c8d3e115e79-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/609fc4f8-bafa-416e-bf1a-badd71426026-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/614763bd-c343-4e9d-9145-6cd9a8bad104-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/645a326e-02ac-45fc-b06f-bb023fdb2344-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/650b04bf-1dba-45d9-a7cd-c9a989cdd898-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/654f96c3-f47b-40a4-9d11-0cb7611fb3bc-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/658b5943-c5ba-4030-a8e0-2c79b33dda37-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/66376f41-afd4-4a6d-ab2a-148849ef5b14-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/67203c1d-6943-40b8-8262-5dec8634efcd-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/677b825b-c95b-47b2-8ba2-88c76fbc14ad-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/68149716-a8e2-4f6a-a197-0ba12d25ad44-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/697fe508-c72c-45d4-8150-9faf71dd8ea1-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6a7d8c42-367c-412b-8487-2750dbc9ae0d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6bb232b6-320b-4c9e-a628-87b9babf69d8-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6c6ff673-837b-4d84-9537-4e6809c3a279-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/71a7a9ab-fe80-4d25-8aed-cbf858172faa-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7266970d-d2d3-4550-a03b-05104f34d050-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7585a637-594e-427a-9e11-4c073f8b6655-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/770274b9-6429-4a8f-8496-9239cd5cfc2a-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/77b07b58-dba2-47cf-a006-5d96edf96205-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/77cca1a9-855c-4061-929e-bf0f7a3c1056-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7872bd0d-3183-473c-9894-8f625b4ecda8-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/78ce2844-5083-4c15-bd2c-b7427dd5743a-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7afc3087-8225-43f4-9516-7140efbb3741-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/803ba8ee-2031-49e0-b027-43af0a951d81-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/827f8464-fc50-4d50-94b2-190cf86dace1-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/832fa274-5145-4266-8873-ffafdd567d4a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/85007f54-78d6-41b5-aec6-e0c8e918bf94-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/86ee80bd-70a8-4f44-9368-d1cd13b5c57d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/896a71d2-af88-47ca-b200-bea8f97fc1a8-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8a789122-aef3-4fa8-89bf-43f37a0643cf-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8a8b7aa3-ebb3-4177-a09b-5bf4ef225646-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8c267736-c093-44cb-86f5-de974f91671e-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8e2880e6-6dcc-497a-8afc-fb6fb8a8241c-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8ec11dbf-6789-42df-b3e4-865d04c3661f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8eeaad43-ec6d-4e8f-9d85-76ce8fcb1116-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8ff6e6a2-9b67-4dfd-9cf2-d8a8eac98bfc-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9234f1e6-785b-4b95-9899-102dc4984464-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/947f8f81-cfec-4ba7-a346-c6bcd694b164-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9531bdd1-5d6e-4cc5-8e39-923ff715ce49-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/95fe4411-6634-44f0-ab93-eb7f48f7ff77-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/96160752-6f05-49a6-9fc2-f98eeb30024e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9624cdc1-865b-4666-af5a-b165c0dd22cc-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9aada02e-2f96-48de-bc74-15ef0d617c7a-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c0f2ef1-ea9f-4c9e-8639-6ebf5b5bbf5d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c949be4-86be-48aa-ac98-289de765946d-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9ecd32d4-8815-4d8a-95f5-899ca6823381-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a02bbae2-0b14-4dc9-9cd1-5acd7a93662b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a07fd21b-992a-430d-a8de-ad308a42af40-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a1cc554a-18f6-4488-b79c-d45c99b799be-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a32aa1fd-0bc6-4cdb-8a13-5a2edd72cfec-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a47a2d28-92d2-465d-a486-04b2d5c47911-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a661fd72-15bf-4d6e-9af0-3e6f6531d6ec-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a87963b4-e33d-4d4d-9d15-6883d849c261-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ab7b2a68-d054-40fd-9c63-774cd6ab9a74-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b55d5f4b-5a19-403e-a28f-1b2aeb730757-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b63db27c-d6c7-402a-8c74-acd640b811a4-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b6772827-822c-4090-b765-8124194a8311-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b7494f48-dd45-4ee0-9968-177d334abfba-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b7e93364-648c-48cd-8053-88fe84f1e6be-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bb0b553b-a627-4bf5-8a12-e3c922657c9e-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc001e2c-349c-4b5a-a7f9-58a65d40f064-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc24a777-e570-4223-8d4e-d6ecb1e4d6c6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bd6946ef-8622-4a37-9ee4-7ee74eb55768-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/be3eb07e-2c40-4c5f-a58c-dd2f8912d00e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bfb38150-fd1c-4adb-9024-410ff73df3c2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c0601d6b-e849-45f9-86f4-94b0bb754a3a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c1c9d558-61e3-4cdc-828f-8c4c62dbbaac-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c23440a2-4cd6-4a93-b2d5-5dc34b176c4a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c248ace6-d690-4dcf-bcd0-99c9cf11f760-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c6fe6c5c-facc-4be0-9afe-aeea5c19d6c2-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c7a9dadc-babb-46a4-bcee-9d483a16f9fc-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c8bf3768-1714-493e-a0d1-a5b4a486ebe1-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c90b8381-96c9-4347-92c9-98d9c3bba243-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cb109a2b-8069-40e3-b728-8262cbca1ff5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ccabfbe9-fc65-48a3-995d-ccd1d8a3e864-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cef31468-47f0-47e2-953d-d610db636402-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d2cccaee-080c-4481-941b-e4f5709331f9-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d2d5ded9-3474-4852-af54-79fcade74e9b-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d4c7fc1c-8d71-449b-803f-9a01c2887b9f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d77b0f19-244c-4449-954e-555261bca733-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/df59ab26-27a0-47c1-af3b-d60acead55ab-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e8592c3e-ea37-44ef-a8f9-e8b00cb8b851-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ea4e6f70-e366-4cb9-98aa-7bb9a7f8aeb6-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ed152259-9db9-4495-b19b-161ffe9e0528-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ee9d1b96-16a7-4297-85f6-57781efcee2c-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ef97ccc3-4388-4291-9b11-1771e1e04db6-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f13a38c3-a536-4fde-ad18-cc171c4d5696-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f46a36ad-2e42-46dd-b327-e19bf5f90ab0-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f54c269d-5e95-45bf-8659-4f116600f587-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f58beb16-47b9-4f00-930e-b64a3cbe6729-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/behaviors.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/behaviors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/packages.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/suites.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/suites.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/data/timeline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/influxDbData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/mail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/export/prometheusData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/categories-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/duration-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/history-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/history/retry-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/behaviors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/packages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/screen-diff/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/plugins/screen-diff/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/behaviors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/categories-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/duration-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/duration.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/environment.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/executors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/history-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/retry-trend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/severity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/status-chart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/suites.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/widgets/summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_scan_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/damai.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/damai_gai.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_damai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/pytest.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pytest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old.png" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/old_square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/old_square.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_scan_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_scan_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,11 +50,15 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests in test_case.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_damai.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.damai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.damai_gai.executor&quot;: &quot;Run&quot;,
     &quot;Python.database_ck.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/15274/PycharmProjects/zzt_autotest/test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -222,16 +69,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\test" />
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\config" />
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\logs" />
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest" />
       <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\allure-results" />
-      <recent name="C:\Users\15274\PycharmProjects\zzt_autotest\testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_case.py">
-    <configuration name="database_ck" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.damai">
+    <configuration name="damai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zzt_autotest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,12 +90,58 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/database_ck.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/damai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="damai_gai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="zzt_autotest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/damai_gai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="damai_new" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="zzt_autotest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\15274\PycharmProjects\zzt_autotest\test\damai_new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,10 +189,29 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_damai.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="zzt_autotest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_damai.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.damai" />
+        <item itemvalue="Python.damai_gai" />
+        <item itemvalue="Python.damai_new" />
+        <item itemvalue="Python tests.Python tests in test_damai.py" />
         <item itemvalue="Python tests.Python tests in test_case.py" />
-        <item itemvalue="Python.database_ck" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +249,24 @@
       <workItem from="1748230243223" duration="190000" />
       <workItem from="1748238906679" duration="2622000" />
       <workItem from="1748329378845" duration="1633000" />
-      <workItem from="1748340941200" duration="5529000" />
+      <workItem from="1748340941200" duration="5672000" />
+      <workItem from="1748403925768" duration="2688000" />
+      <workItem from="1748485909008" duration="672000" />
+      <workItem from="1748487775324" duration="593000" />
+      <workItem from="1749015875003" duration="559000" />
+      <workItem from="1749107391213" duration="1160000" />
+      <workItem from="1749431288075" duration="5921000" />
+      <workItem from="1749613084085" duration="1141000" />
+      <workItem from="1749621144749" duration="7572000" />
+      <workItem from="1749781047140" duration="301000" />
+      <workItem from="1750839116304" duration="159000" />
+      <workItem from="1751435529938" duration="595000" />
+      <workItem from="1751623563614" duration="204000" />
+      <workItem from="1754467606186" duration="3136000" />
+      <workItem from="1754531102233" duration="6912000" />
+      <workItem from="1754616074710" duration="1232000" />
+      <workItem from="1754988834265" duration="594000" />
+      <workItem from="1755594268058" duration="13423000" />
     </task>
     <task id="LOCAL-00001" summary="zzt登录">
       <option name="closed" value="true" />
@@ -512,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748225624395</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="zzt测试、生产环境">
+      <option name="closed" value="true" />
+      <created>1748398699765</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1748398699765</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +471,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="zzt测试、生产环境" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1747723240885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+    <SUITE FILE_PATH="coverage/zzt_autotest$damai_gai.coverage" NAME="damai_gai Coverage Results" MODIFIED="1754537414497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/zzt_autotest$.coverage" NAME=" Coverage Results" MODIFIED="1754533604249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/zzt_autotest$damai.coverage" NAME="damai Coverage Results" MODIFIED="1754537495023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/zzt_autotest$database_ck.coverage" NAME="database_ck Coverage Results" MODIFIED="1747381534383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>

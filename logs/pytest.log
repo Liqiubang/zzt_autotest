@@ -1,2 +1,56 @@
-2025-05-28 10:14:53 WARNING [selenium.webdriver.common.selenium_manager:138] The chromedriver version (135.0.7049.84) detected in PATH at D:\python\Scripts\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.114); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
-2025-05-28 10:14:55 INFO [conftest:22] 夹具初始化完成，浏览器启动成功
+2025-08-20 17:27:30 WARNING [selenium.webdriver.common.selenium_manager:138] Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)
+2025-08-20 17:27:34 INFO [conftest:24] 夹具初始化完成，浏览器启动成功
+2025-08-20 17:27:34 INFO [test_case:16] 浏览器已启动
+2025-08-20 17:27:43 INFO [testcases.test_basepage:61] 准备登录
+2025-08-20 17:27:43 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//input[@id='username']"
+2025-08-20 17:27:44 INFO [testcases.test_basepage:32] 元素定位成功：tag_nameinput
+2025-08-20 17:27:46 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//input[@id='password']"
+2025-08-20 17:27:47 INFO [testcases.test_basepage:32] 元素定位成功：tag_nameinput
+2025-08-20 17:27:47 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='clApp']//span[text()='登录']"
+2025-08-20 17:27:48 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:06 INFO [testcases.test_basepage:107] 登录成功
+2025-08-20 17:28:08 INFO [test_case:25] 登录成功
+2025-08-20 17:28:08 INFO [testcases.test_basepage:198] 准备发送常量短信
+2025-08-20 17:28:10 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='childRoot']/div/div[1]/div/div/div/div/div[3]/div/a[1]"
+2025-08-20 17:28:13 INFO [testcases.test_basepage:32] 元素定位成功：tag_namea
+2025-08-20 17:28:14 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/button/span"
+2025-08-20 17:28:15 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:15 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='onlinesendForm']/div[2]/div[2]/div/div/div/div[3]/button/span[2]"
+2025-08-20 17:28:17 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:17 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-modal-body']//input"
+2025-08-20 17:28:18 INFO [testcases.test_basepage:32] 元素定位成功：tag_nameinput
+2025-08-20 17:28:18 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-modal-content']//span[text()='确 定']"
+2025-08-20 17:28:18 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:22 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-form-item-control-input-content']//div[@role='textbox']"
+2025-08-20 17:28:22 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:28:25 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='onlinesendForm']//span[text()='提交短信群发任务']"
+2025-08-20 17:28:25 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:26 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='立即发送']"
+2025-08-20 17:28:28 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:28:28 INFO [testcases.test_basepage:212] 发送常量短信完成
+2025-08-20 17:28:51 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-08-20 17:28:53 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:28:53 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-08-20 17:28:54 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:28:54 INFO [test_case:52] 断言 页面实际短信内容:【创蓝云智】prod自动化常量模板拒收请回复R 程序设置的短信断言内容:【创蓝云智】prod自动化常量模板拒收请回复R
+ 
+2025-08-20 17:28:54 INFO [testcases.test_basepage:229] 准备发送变量短信
+2025-08-20 17:28:56 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='childRoot']/div/div[2]/div/div/div[1]/div/div[3]/div/button/span"
+2025-08-20 17:29:00 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:29:01 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='onlinesendForm']/div[3]/div[2]/div/div/div[1]/div/button/span[2]"
+2025-08-20 17:29:03 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:29:03 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='开始上传']"
+2025-08-20 17:29:04 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:29:20 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-form-item-control-input-content']//div[@role='textbox']"
+2025-08-20 17:29:20 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:29:23 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//*[@id='onlinesendForm']//span[text()='提交短信群发任务']"
+2025-08-20 17:29:24 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:29:24 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//div[@class='sms-modal-body']//span[text()='立即发送']"
+2025-08-20 17:29:26 INFO [testcases.test_basepage:32] 元素定位成功：tag_namespan
+2025-08-20 17:29:26 INFO [testcases.test_basepage:249] 发送变量短信完成
+2025-08-20 17:29:48 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-08-20 17:29:50 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:29:50 INFO [testcases.test_basepage:25] 正在定位元素：xpath="//tbody[@class='sms-table-tbody']/tr[2]/td[3]/div"
+2025-08-20 17:29:51 INFO [testcases.test_basepage:32] 元素定位成功：tag_namediv
+2025-08-20 17:29:51 INFO [test_case:77] 断言 页面实际短信内容:【创蓝云智】prod自动化变量模板测试拒收请回复R 程序设置的短信断言内容:【创蓝云智】prod自动化变量模板测试拒收请回复R
+ 

@@ -41,11 +41,11 @@ class TestBasePage:
     #             return self.get_element(xpath)
     #     raise AttributeError(f"属性 '{item}' 不存在")
 
-    def alert_ok(self):
-        logger.info("正在处理弹窗")
-        alert = self.driver.wait.until(alert_is_present)
-        alert.accept()
-        logger.info("弹窗处理完成")
+    # def alert_ok(self):
+    #     logger.info("正在处理弹窗")
+    #     alert = self.driver.wait.until(alert_is_present)
+    #     alert.accept()
+    #     logger.info("弹窗处理完成")
 
 
 # Page类作为基类被其他页面类继承，子类在初始化时会调用父类的构造函数，传递driver参数
@@ -211,7 +211,7 @@ class TestSendConstantSmsPage(TestBasePage):
         self.get_element(self.sendNow).click()
         logger.info("发送常量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "常量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
-        time.sleep(60)  # 等待发送完成
+        time.sleep(20)  # 等待页面显示
         send_records_url = f"{env_config['send_records_url']}"
         self.driver.get(send_records_url)
 
@@ -231,12 +231,14 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.driver.get(variable_send_url)
         self.get_element(self.smsBatchSendBtn).click()
         self.get_element(self.insertVariableContent).click()
+
         file_input = self.driver.find_element(By.XPATH, self.fileInputLocator)
         self.driver.execute_script(
             "arguments[0].style.display='block'; arguments[0].click();",
             file_input
         )
         file_input.send_keys('C:\\Users\\15274\\Downloads\\guoneibianliang.txt')
+
         self.get_element(self.beginUpload).click()
         time.sleep(15)  # 等待变量上传框关闭
         variable_template = f"{env_config['variable_template']}"
@@ -246,6 +248,6 @@ class TestSendVariableSmsPage(TestSendConstantSmsPage):
         self.get_element(self.sendNow).click()
         logger.info("发送变量短信完成")
         allure.attach(self.driver.get_screenshot_as_png(), "变量短信发送成功截图", allure.attachment_type.PNG)  # 交互后截图
-        time.sleep(60)  # 等待发送完成
+        time.sleep(20)  # 等待页面显示
         send_records_url = f"{env_config['send_records_url']}"
         self.driver.get(send_records_url)

@@ -10,7 +10,7 @@ environments:
     variable_send_url: "https://cloudsit.cm253.com/control/sms/cl_market_sms/variableSend"
     send_records_url: "https://cloudsit.cm253.com/control/sms/cl_market_sms/send-records"
     assert_constant_template: "【创蓝云智】sit自动化常量模板拒收请回复R"
-    assert_variable_template: "【创蓝云智】sit自动化变量模板葫芦拒收请回复R"
+    assert_variable_template: "【创蓝云智】sit自动化变量模板生产测试拒收请回复R"
     assert_report: "DELIVRD"
   prod:
     login_url: "https://www.chuanglan.com/control/login"
@@ -22,6 +22,6 @@ environments:
     constant_send_url: "https://www.chuanglan.com/control/sms/cl_market_sms/onlineSend"
     variable_send_url: "https://www.chuanglan.com/control/sms/cl_market_sms/variableSend"
     send_records_url: "https://www.chuanglan.com/control/sms/cl_market_sms/send-records"
-    assert_constant_template: "【上海木南测试】prod自动化常量模板拒收请回复R"
-    assert_variable_template: "【上海木南测试】prod自动化变量模板葫芦拒收请回复R"
+    assert_constant_template: "【创蓝云智】prod自动化常量模板拒收请回复R"
+    assert_variable_template: "【创蓝云智】prod自动化变量模板测试拒收请回复R"
     assert_report: "DELIVRD"
